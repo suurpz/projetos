@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeça</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lora:ital@1&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .header {
+            padding: 5px 5px;
+            overflow: hidden;
+            background-color:gold ;
+            background: linear-gradient(90deg, rgb(255, 225, 93) 6%, rgb(255, 196, 0) 21%, rgb(255, 186, 36) 44%, rgb(248, 132, 0) 68%, rgb(255, 81, 0) 100%);
+        }
+
+        .header a {
+            font-family: 'Edu TAS Beginner', cursive;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            color:rgb(0, 0, 0)
+        }
+
+        .r-header {
+            float: right;
+        }
+        
+        .texto {
+            width: 1500px;
+            position: absolute;
+            left: 100px;
+        }
+        
+        .pergunta {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .ex {
+            background-color: rgb(87, 87, 87);
+            width: 600px;
+            position: relative;
+            padding: 1rem;
+        }
+
+        .ex2 {
+            background-color: rgb(87, 87, 87);
+            width: 400px;
+            position: relative;
+        
+        }
+
+        .ex2 .emoji {
+            position: relative;
+            font-size: 48px ;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <secton>
+        <div class="header">
+            <a>TOP 10 PERGUNTAS</a>
+            <div class="r-header">
+                <a href="../">Lista de Atividades</a>
+            </div>
+        </div>
+        <div class="texto">
+            <p class="pergunta">
+                Qual a utilidade da tag HEAD e quais os elementos HTML que podem ser usados dentro do head da página?
+            </p>
+            <p>
+                O elemento HTML <code>&lthead&gt</code> providencia informações gerais (metadados) sobre o documento, 
+                incluindo seu título e links para scripts e folhas de estilos. Elementos que podem ser usados dentro de um <strong>head</strong>
+                element: <code> &lttitle&gt, &ltbase&gt, &ltlink&gt, &ltstyle&gt, &ltmeta&gt, &ltscript&gt, &ltnoscript&gt</code>.
+            </p>
+
+            <p  class="pergunta">
+                Explique a utilidade e o funcionamento das tags meta, title e base. Dê um exemplo da utilização 
+                de cada uma delas.
+            </p>
+
+            <p>
+                O elemento HTML <code>&ltmeta&gt</code> define qualquer informação de metadados que não podem ser definidos por outros elementos HTML. 
+                <code>(&ltbase&gt, &ltlink&gt, &ltscript&gt, &ltstyle&gt ou &lttitle&gt)</code>. <br>
+                Exemplo: 
+                <div class="ex">
+                    <p>
+                        <a style="color:chartreuse"><code>&lt<color>meta</color> charset="utf-8"/&gt</code></a>
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                O elemento HTML <code>&lttitle&gt</code> (Elemento HTML Título) define o título do documento, mostrado na barra de título de um navegador ou na aba da 
+                página. Pode conter somente texto e quaisquer marcações contidas no texto não são interpretadas. <br>
+                Exemplo:
+                <div class="ex">
+                    <p>
+                         <a style="color:rgb(42, 212, 255)"><code>&lttitle&gtCabeça&lt/title&gt</code></a>
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                O elemento HTML Base <code>(&ltbase&gt)</code> especifica o endereço (URL) utilizada por todos os endereços relativos contidos dentro de um documento. 
+                Há um número máximo de 1 (um) elemento Base <code>&ltbase&gt</code> do documento. <br>
+                
+                Exemplo:
+                <div class="ex">
+                    <p>
+                         <a style="color:rgb(224, 202, 0)"><code>&ltbase href="http://www.example.com/"/&gt
+                            <br>
+                            &ltbase target="_blank" href="http://www.example.com/"/&gt</code></a>
+                    </p>
+                </div>
+            </p>
+
+            <p class="pergunta">
+                O que é um charset? Qual a sua utilidade?
+            </p>
+
+            <p>
+                A tag <code>&ltmeta charset=""&gt</code> é uma tag meta utilizada para comunicar aos navegadores qual é o formato 
+                decodificação de caracteres utilizado naquele documento. ASCII, UTF-8, ANSI e ISO-8859-1 são exemplos de charsets
+            </p>
+
+            <p class="pergunta">
+                Caso o charset não seja definido na página qual será utilizado por padrão?
+            </p>
+
+            <p>
+                Sua não utilização pode acarretar diversos problemas de renderização ao longo da página, inclusive impedindo que usuários 
+                em outros países possam visualizar determinados conteúdos. E o charset padrão que será 
+                utilizado por padrão será o UTF-8. 
+            </p>
+
+            <p class="pergunta">
+                Fale sobre os charsets UTF-8, ASCII, ANSI e ISO-8859-1.
+            </p>
+
+            <p>
+               <strong>UTF-8</strong>: o padrão de codificação mais utilizado, também chamado de Unicode — 
+               ou Conjunto de Caracteres Codificados Universal. Esse padrão uniformiza as informações ao 
+               redor do mundo fazendo com que os navegadores renderem todos os conteúdos a partir das regras 
+               estabelecidas pelo UTF-8.
+            </p>
+
+            <p>
+                <strong>ASCII</strong>: A codificação ASCII, ou American Standard Code for Information Interchange, é uma 
+                codificação bastante popular, mas que lida somente com letras do alfabeto americano, do idioma inglês.
+            </p>
+
+            <p>
+                <strong>ANSI</strong>: Como ele estabeleceu algumas normas de uso de caracteres para atender demandas diversas, 
+                muitos encodings (na verdade páginas de códigos) acabam sendo chamados genericamente de ANSI, até para fazer um 
+                contraponto ao Unicode que é outra entidade com outro tipo de encoding. 
+            </p>
+
+            <p>
+                <strong>ISO-8859-1</strong>: ISO/IEC 8859-1 é uma codificação de caracteres do alfabeto latino, a primeira parte da ISO 8859. 
+                Foi desenvolvida pela ISO, e posteriormente passou a ser mantida pela ISO e pela IEC. Este padrão é a base de outros mapeamentos 
+                amplamente usados como o ISO-8859-1 e o Windows-1252.
+            </p>
+
+            <p class="pergunta">
+                Explique como se pode usar símbolos e emojis em páginas web e dê exemplos.
+            </p>
+
+            <p>
+                O <code>&ltmeta charset="UTF-8"&gt</code>elemento define o conjunto de caracteres. Os caracteres A, B e C são exibidos pelos números 65, 66 e 67. 
+                Para permitir que o navegador entenda que você está exibindo um caractere, você deve iniciar o número da entidade com e terminá-lo com ; 
+                (ponto e vírgula). <br>
+                Exemplo:
+            </p>
+
+            <div class="ex2">
+                <p class="emoji">&#128516;</p>
+                <p class="emoji">&#128522;</p>
+                <p class="emoji">&#128150;</p>
+            </div>
+
+            
+        </div>
+    </secton>
+    
+</body>
+</html>

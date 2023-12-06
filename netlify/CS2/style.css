@@ -1,0 +1,29 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(251, 198, 173);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    border: 3rem solid  rgb(255, 153, 106, 0.719);
+}
+
+
+
+h1 {
+    color:rgb(117, 82, 42);
+}
+
+p {
+    color:rgb(117, 82, 42);
+    font-size: large;
+}
+
+a {
+    font-size: large;
+    display: flex;
+    align-items:flex-end;
+}

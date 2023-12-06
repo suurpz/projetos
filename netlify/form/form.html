@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua opinião na musica</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&family=Young+Serif&display=swap');
+
+        * {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 18px;
+
+        }
+
+        .header {
+            background-color: rgb(0, 0, 0);
+            padding: 5px 5px;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Pixelify Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .texto {
+            margin: 0 auto;
+            width: 30%;
+
+        }
+
+        form {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+        }
+
+        textarea {
+            resize: inherit;
+            width: 34rem;
+            height: 10rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Dá um liga
+        </h1>
+    </div>
+
+
+    <div class="texto">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9e5rbvq4gnc?si=HJFuvHl4wqUKZ03x"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+
+        <p>
+            Temos algumas perguntas sobre o que você achou dessa música.
+        </p>
+
+        <form action="https://open.spotify.com/intl-pt/artist/3CIq9N0VQGWfBpCAMzMZZN">
+            <div>
+                <label for="nome">Informe o seu nome.</label>
+                <input type="text" name="nome">
+            </div>
+
+            <div>
+                <a>Essa música te agradou?</a> <br>
+                <input type="radio" name="op" value="yes">
+                <label for="yes">Sim.</label> <br>
+                <input type="radio" name="op" value="no">
+                <label for="no">Não.</label> <br>
+            </div>
+
+            <div>
+                <label for="text">O que você achou da música?</label> <br>
+                <textarea id="message"></textarea>
+            </div>
+
+            <div>
+                <a>Qual gênero você pensa que essa música pertence?</a> <br>
+                <input type="checkbox" name="check1" value="pop">
+                <label for="check1">Pop</label> <br>
+                <input type="checkbox" name="check2" value="rap">
+                <label for="check2">Rap</label> <br>
+                <input type="checkbox" name="check3" value="rock">
+                <label for="check3">Rock</label> <br>
+                <input type="checkbox" name="check4" value="indie">
+                <label for="check4">Indie</label> <br>
+            </div>
+
+            <div>
+                <label for="emotion">Ela te causou alguma emoção?</label>
+                <select id="emotion">
+                    <option value="alegria">Alegria</option>
+                    <option value="tristeza">Tristeza</option>
+                    <option value="aaiva">Raiva</option>
+                    <option value="ansiedade">Ansiedade</option>
+                    <option value="excitação">Excitação</option>
+                    <option value="felicidade">Felicidade</option>
+                    <option value="nostalgia">Nostalgia</option>
+                    <option value="outra">Outra</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form> 
+        <br>
+
+        <a href="../" style="font-weight: bold; font-size: 15px;">Lista de atividades</a>
+
+        
+    </div>
+
+</body>
+
+</html>
